@@ -1,7 +1,3 @@
-// AutoTools — pequeñas mejoras comunes para la web.
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
-  link.addEventListener('click',event=>{
-    const target=document.querySelector(link.getAttribute('href'));
-    if(target){event.preventDefault();target.scrollIntoView({behavior:'smooth'});}
-  });
-});
+document.querySelectorAll('a[href^="#"]').forEach(link=>{link.addEventListener('click',e=>{const t=document.querySelector(link.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}})});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('is-visible')}),{threshold:.08});
+document.querySelectorAll('.tool-card,.category-grid>div,.step,.about').forEach(el=>{el.classList.add('reveal');observer.observe(el)});
