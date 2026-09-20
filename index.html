@@ -3,61 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Herramientas gratuitas para calcular costos y datos útiles de autos.">
-  <title>AutoTools — Herramientas para tu auto</title>
+  <meta name="description" content="AutoTools: calculadoras gratuitas para combustible, costos de auto, financiación, peso/potencia y más.">
+  <meta name="theme-color" content="#080b10">
+  <title>AutoTools — Calculadoras y herramientas para autos</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="index.html">AutoTools</a>
-      <nav><a href="#herramientas">Herramientas</a><a href="#sobre">Sobre el proyecto</a></nav>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html"><span class="logo-mark">A</span> AutoTools</a>
+    <nav>
+      <a href="#herramientas">Herramientas</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#sobre">Sobre AutoTools</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <span class="eyebrow">🚗 Herramientas automotrices gratuitas</span>
+      <h1>Entendé tu auto.<br><span>Calculá mejor.</span></h1>
+      <p>Calculadoras rápidas para combustible, costos, rendimiento y datos de autos. Sin registro y sin complicaciones.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#herramientas">Explorar herramientas <span>→</span></a>
+        <a class="button button-ghost" href="#como-funciona">¿Cómo funciona?</a>
+      </div>
+      <div class="trust-row"><span>✓ Gratis</span><span>✓ Sin registro</span><span>✓ Resultados instantáneos</span></div>
     </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <span class="eyebrow">Gratis · Rápido · Sin registro</span>
-        <h1>Calculá cuánto te cuesta realmente tu auto.</h1>
-        <p>Herramientas simples para tomar mejores decisiones sobre autos, combustible y gastos.</p>
-        <a class="button" href="#herramientas">Ver herramientas</a>
-      </div>
-    </section>
-
-    <section id="herramientas" class="section">
-      <div class="container">
-        <h2>Herramientas</h2>
-        <div class="grid">
-          <a class="card" href="calculadora-combustible.html">
-            <div class="icon">⛽</div>
-            <h3>Calculadora de combustible</h3>
-            <p>Calculá cuánto gastás en combustible por viaje, semana o mes.</p>
-            <span class="card-link">Abrir calculadora →</span>
-          </a>
-          <div class="card muted">
-            <div class="icon">🚗</div>
-            <h3>Costo mensual del auto</h3>
-            <p>Próximamente: combustible, seguro, mantenimiento y otros gastos.</p>
-          </div>
-          <div class="card muted">
-            <div class="icon">🏁</div>
-            <h3>Relación peso/potencia</h3>
-            <p>Próximamente: compará rápidamente el rendimiento relativo.</p>
-          </div>
+    <div class="hero-panel">
+      <div class="dashboard-card">
+        <div class="dash-top"><span>AutoTools</span><span class="live-dot">● En línea</span></div>
+        <div class="dash-main">
+          <span class="dash-label">Costo estimado del viaje</span>
+          <strong>$ 18.450</strong>
+          <div class="dash-bar"><i></i></div>
+          <div class="dash-stats"><span><b>123 km</b> distancia</span><span><b>8,2 L</b> /100 km</span></div>
         </div>
+        <div class="dash-footer"><span>⛽ Combustible</span><span>Resultado calculado</span></div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="sobre" class="section section-alt">
-      <div class="container narrow">
-        <h2>Herramientas hechas para ser útiles</h2>
-        <p>La idea de AutoTools es reunir calculadoras gratuitas que resuelvan preguntas reales sin vueltas ni registro.</p>
+<section id="herramientas" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div><span class="eyebrow">CENTRO DE HERRAMIENTAS</span><h2>Todo lo que necesitás, en un solo lugar.</h2></div>
+      <span class="tool-count">01 disponible · 03 en desarrollo</span>
+    </div>
+    <div class="tools-grid">
+      <a class="tool-card featured" href="calculadora-combustible.html">
+        <div class="tool-icon">⛽</div><span class="tool-tag">Disponible</span>
+        <h3>Calculadora de combustible</h3>
+        <p>Calculá litros y costo de un viaje según distancia, consumo y precio.</p>
+        <span class="tool-arrow">Abrir herramienta <b>→</b></span>
+      </a>
+      <div class="tool-card">
+        <div class="tool-icon">🚗</div><span class="tool-tag soon">Próximamente</span>
+        <h3>Costo mensual del auto</h3>
+        <p>Estimá combustible, seguro, mantenimiento, patente y otros gastos.</p>
+        <span class="tool-arrow">En desarrollo</span>
       </div>
-    </section>
-  </main>
+      <div class="tool-card">
+        <div class="tool-icon">⚡</div><span class="tool-tag soon">Próximamente</span>
+        <h3>Relación peso/potencia</h3>
+        <p>Descubrí cuántos kg mueve cada caballo de fuerza de tu auto.</p>
+        <span class="tool-arrow">En desarrollo</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🏦</div><span class="tool-tag soon">Próximamente</span>
+        <h3>Financiación de auto</h3>
+        <p>Simulá cuotas, intereses y costo total antes de financiar.</p>
+        <span class="tool-arrow">En desarrollo</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🏁</div><span class="tool-tag soon">Próximamente</span>
+        <h3>FOV para simracing</h3>
+        <p>Calculá el campo de visión para conseguir una imagen más realista.</p>
+        <span class="tool-arrow">En desarrollo</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🛠️</div><span class="tool-tag soon">Próximamente</span>
+        <h3>Costo de mantenimiento</h3>
+        <p>Organizá servicios y estimá cuánto puede costar mantener tu vehículo.</p>
+        <span class="tool-arrow">En desarrollo</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <footer><div class="container">© 2026 AutoTools</div></footer>
-  <script src="script.js"></script>
+<section id="como-funciona" class="section section-alt">
+  <div class="container steps">
+    <div><span class="eyebrow">SIMPLE POR DISEÑO</span><h2>De una pregunta a una respuesta en segundos.</h2><p>Elegí una herramienta, ingresá tus datos y obtené un resultado claro. AutoTools está pensado para resolver una necesidad concreta sin cuentas ni formularios interminables.</p></div>
+    <div class="step-list">
+      <div class="step"><span>01</span><div><h3>Elegí una herramienta</h3><p>Encontrá la calculadora que necesitás.</p></div></div>
+      <div class="step"><span>02</span><div><h3>Ingresá tus datos</h3><p>Usá los datos reales de tu auto.</p></div></div>
+      <div class="step"><span>03</span><div><h3>Obtené el resultado</h3><p>Tomá decisiones con números claros.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <div class="container about">
+    <div><span class="eyebrow">SOBRE AUTOTOOLS</span><h2>Herramientas útiles, sin vueltas.</h2></div>
+    <div><p>Estamos construyendo una colección de herramientas gratuitas para conductores, compradores de autos y entusiastas del mundo motor.</p><p>La idea es simple: menos estimaciones a ojo y más números que puedas entender.</p></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer-inner"><span>© 2026 AutoTools</span><span>Hecho para quienes aman los autos.</span></div></footer>
+<script src="script.js"></script>
 </body>
 </html>
