@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://delagoomar20-web.github.io/mi_web/sitemap.xml
